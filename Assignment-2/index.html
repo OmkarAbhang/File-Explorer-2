@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>File Explorer</title>
     </head>
-    <body onload="customMain()">
+    <body>
         <h1 id="MainHeadingTag">File Explorer</h1>
 
         <div id="namingContainer">
@@ -44,7 +44,7 @@
                         alt="📁"
                         id="rootFolderBtn"
                         class="folderBtn"
-                        onclick="createFolderItem()"
+                        onclick="handleClick(this)"
                     />
                 </span>
                 <span id="rootFile" class="file">
@@ -53,7 +53,7 @@
                         alt="📄"
                         id="rootFileBtn"
                         class="fileBtn"
-                        onclick="createFileItem()"
+                        onclick="handleClick(this)"
                     />
                 </span>
                 <span id="rootDelete" class="delete">
